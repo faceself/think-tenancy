@@ -1,0 +1,40 @@
+{
+    "name": "xuesong/think-tenancy",
+    "description": "A Thinkphp multi-database tenancy package that respects your code.",
+    "homepage": "https://github.com/faceself/think-tenancy",
+    "keywords": ["thinkphp", "saas", "thinkphp-saas", "multi-tenancy", "multi-database", "tenancy"],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=5.6.0",
+        "ext-json": "*",
+        "facade/ignition-contracts": "^1.0",
+        "ramsey/uuid": "^3.7"
+    },
+    "require-dev": {
+        "vlucas/phpdotenv": "^3.3",
+        "topthink/framework": "~5.0.0",
+        "phpunit/phpcov": "^6.0"
+    },
+    "authors": [
+        {
+            "name": "Xuesong",
+            "email": "939648641@qq.com"
+        }
+    ],
+    "extra": {
+        "think-config": {
+            "tenancy": "src/config.php"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "think\\tenancy\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
